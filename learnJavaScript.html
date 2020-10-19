@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bé tập tính</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" ></script>
+    
+</head>
+<body>
+    <h1><strong>Bé tập tính</strong></h1>
+    <br>
+    <form id="frm1">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Số thứ nhất</p>
+                    <p>Số thứ hai</p>
+                    <p>Kết quả</p>
+                    <p>Thông báo</p>
+                    
+                </div>
+                <div class="col">
+                    <input onchange="CheckInput(1);" class="input" type="text" id="number1" placeholder="Enter number">
+                    <input onchange="CheckInput(2);" class="input" type="text" id="number2" placeholder="Enter number">
+                    <input class="input" id="result" value="">
+                    <p id="alertError"></p>
+                </div>
+                <div class="col">
+                    <div class="choice">
+                        <input type="radio" onclick="SetSelection(this.value);" name="choice"  value="add"> 
+                        <label>Cộng</label>
+                        <input type="radio" onclick="SetSelection(this.value);" name="choice" value="substract" > 
+                        <label>Trừ</label>
+                        <br>
+                        <input type="radio" onclick="SetSelection(this.value);" name="choice" value="multiply" > 
+                        <label>Nhân</label>
+                        <input type="radio" onclick="SetSelection(this.value);" name="choice" value="division" > 
+                        <label>Chia</label>
+                        <br>
+                        <input onclick="Calculate();" type="button" id="tinh" value="Tính">
+                    </div>
+                    
+                </div>
+            </div>
+            <p>
+                
+                
+            </p>
+        </div>
+        
+    </form>
+
+
+</body>
+</html>
+
+
+
+
